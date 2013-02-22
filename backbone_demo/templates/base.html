@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=320, user-scalable=no, target-densitydpi=medium-dpi"/>
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="address=no" />
+
+<link rel="stylesheet" href="{{ STATIC_URL }}css/todos.css">
+<script data-main="{{ STATIC_URL }}js/main" src="{{ STATIC_URL }}js/libs/require/require.js"></script>
+
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>
